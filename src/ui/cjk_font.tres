@@ -1,0 +1,8 @@
+[gd_resource type="SystemFont" format=3]
+
+; 全局默认字体：按优先级取系统中文字体。
+; Godot 本身在缺字时会自动回退到系统字体，这里显式指定是为了让字形和
+; 字宽在各机器上保持一致（否则不同机器可能选到不同字体，UI 排版会飘）。
+[resource]
+font_names = PackedStringArray("Microsoft YaHei", "微软雅黑", "SimHei", "SimSun", "sans-serif")
+allow_system_fallback = true

@@ -1,0 +1,48 @@
+{
+  "id": "level_endless",
+  "name": "无尽裂隙",
+  "chapter": 6,
+  "description": "无尽模式：波次无限、怪物逐波变强，扛过 10 波额外有金币奖励。",
+  "background_image": "",
+  "grid": { "width": 128, "height": 72, "tile_size": 15 },
+  "path": [
+    { "x": 0, "y": 16 },
+    { "x": 32, "y": 16 },
+    { "x": 32, "y": 48 },
+    { "x": 80, "y": 48 },
+    { "x": 80, "y": 24 },
+    { "x": 120, "y": 24 }
+  ],
+  "obstacles": [
+    { "x": 48, "y": 32 },
+    { "x": 56, "y": 32 },
+    { "x": 96, "y": 40 },
+    { "x": 104, "y": 40 },
+    { "x": 8, "y": 40 },
+    { "x": 48, "y": 8 }
+  ],
+  "buildable_tiles": [],
+  "monster_pool": ["fire_slime", "water_slime", "thunder_slime", "ice_slime"],
+  "tower_pool": ["fire_mage_tower", "water_mage_tower", "thunder_mage_tower", "ice_mage_tower"],
+  "card_pool": ["brass_fire_damage", "brass_water_damage", "brass_thunder_damage", "brass_attack_speed"],
+  "initial_points": 100,
+  "points_per_wave": 40,
+  "gold_reward": 100,
+  "clear_gold": 0,
+  "monster_hp_multiplier": 1.0,
+  "cards_per_wave": 3,
+  "endless": true,
+  "endless_hp_growth": 0.18,
+  "waves": [
+    {
+      "wave": 1,
+      "hp_bonus": 0.0,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 3, "interval": 0.8, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 3, "interval": 0.8, "delay": 2.4 },
+        { "monster_id": "thunder_slime", "count": 3, "interval": 0.8, "delay": 4.8 },
+        { "monster_id": "ice_slime", "count": 3, "interval": 0.8, "delay": 7.2 }
+      ]
+    }
+  ]
+}

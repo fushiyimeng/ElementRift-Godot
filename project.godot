@@ -1,0 +1,38 @@
+; Engine configuration file.
+; 《元素裂隙》Godot 版 —— 由 pygame 版移植而来
+
+config_version=5
+
+[application]
+
+config/name="元素裂隙"
+config/description="基于 pygame 版移植的塔防游戏"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7")
+
+[autoload]
+
+GameData="*res://src/autoload/loader.gd"
+Audio="*res://src/autoload/audio.gd"
+
+[gui]
+
+theme/custom_font="res://src/ui/cjk_font.tres"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[physics]
+
+common/physics_ticks_per_second=60
+
+[rendering]
+
+; 清屏色 = Config.COLOR_BG 的 Color8(24, 24, 34)。
+; 不设的话用的是 Godot 默认的浅灰(76,76,76)，菜单界面会变成浅灰底，
+; 从游戏里退回菜单时背景色突变，看起来像闪了一下。
+environment/defaults/default_clear_color=Color(0.094118, 0.094118, 0.133333, 1)

@@ -1,0 +1,42 @@
+{
+  "brass_fire_damage": {
+    "name": "黄铜·火元素伤害",
+    "rarity": "brass",
+    "price": 30,
+    "scope": "element",
+    "target": "火",
+    "stat": "damage",
+    "op": "mul",
+    "value": 0.10
+  },
+  "brass_water_damage": {
+    "name": "黄铜·水元素伤害",
+    "rarity": "brass",
+    "price": 30,
+    "scope": "element",
+    "target": "水",
+    "stat": "damage",
+    "op": "mul",
+    "value": 0.10
+  },
+  "brass_thunder_damage": {
+    "name": "黄铜·雷元素伤害",
+    "rarity": "brass",
+    "price": 30,
+    "scope": "element",
+    "target": "雷",
+    "stat": "damage",
+    "op": "mul",
+    "value": 0.10
+  },
+  "brass_attack_speed": {
+    "name": "黄铜·攻击速度",
+    "rarity": "brass",
+    "price": 40,
+    "scope": "global",
+    "target": "all_towers",
+    "stat": "attack_speed",
+    "op": "mul",
+    "value": 0.10
+  }
+}

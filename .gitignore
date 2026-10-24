@@ -1,0 +1,14 @@
+# Godot 的导入缓存与临时文件（可随时由 --import 重建）
+.godot/
+*.translation
+
+# 导出产物
+build/
+export/
+dist/
+
+# 开发用截图（tools/screenshot.gd 的输出）
+.shots/
+
+# 注意：data/ 下的 *.import 文件是需要提交的 —— 它们记录资源的导入参数，
+# 删掉会导致 Godot 重新导入并可能改变压缩/过滤设置。

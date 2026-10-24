@@ -1,0 +1,1 @@
+D:\Godet\Godot_v4.7.2-stable_win64.exe --path "C:\Users\LiuHu\Desktop\ElementRift-Godot"

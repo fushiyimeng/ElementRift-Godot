@@ -1,0 +1,94 @@
+{
+  "id": "level_01",
+  "name": "史莱姆平原",
+  "chapter": 1,
+  "description": "裂隙初现，史莱姆成群涌来。",
+  "background_image": "",
+  "grid": { "width": 128, "height": 72, "tile_size": 15 },
+  "path": [
+    { "x": 0, "y": 16 },
+    { "x": 32, "y": 16 },
+    { "x": 32, "y": 48 },
+    { "x": 80, "y": 48 },
+    { "x": 80, "y": 24 },
+    { "x": 120, "y": 24 }
+  ],
+  "obstacles": [
+    { "x": 48, "y": 32 },
+    { "x": 56, "y": 32 },
+    { "x": 96, "y": 40 },
+    { "x": 104, "y": 40 },
+    { "x": 8, "y": 40 },
+    { "x": 48, "y": 8 }
+  ],
+  "buildable_tiles": [],
+  "monster_pool": ["fire_slime", "water_slime", "thunder_slime", "ice_slime"],
+  "tower_pool": ["fire_mage_tower", "water_mage_tower", "thunder_mage_tower", "ice_mage_tower"],
+  "card_pool": ["brass_fire_damage", "brass_water_damage", "brass_thunder_damage", "brass_attack_speed"],
+  "initial_points": 100,
+  "points_per_wave": 50,
+  "gold_reward": 0,
+  "clear_gold": 100,
+  "monster_hp_multiplier": 1.0,
+  "cards_per_wave": 3,
+  "waves": [
+    {
+      "wave": 1,
+      "hp_bonus": 0.0,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 6, "interval": 1.0, "delay": 0.0 }
+      ]
+    },
+    {
+      "wave": 2,
+      "hp_bonus": 0.12,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 5, "interval": 1.0, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 3, "interval": 1.0, "delay": 3.0 }
+      ]
+    },
+    {
+      "wave": 3,
+      "hp_bonus": 0.15,
+      "groups": [
+        { "monster_id": "water_slime", "count": 3, "interval": 1.0, "delay": 0.0 },
+        { "monster_id": "thunder_slime", "count": 3, "interval": 1.0, "delay": 3.0 }
+      ]
+    },
+    {
+      "wave": 4,
+      "hp_bonus": 0.18,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 4, "interval": 0.8, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 3, "interval": 0.8, "delay": 3.2 },
+        { "monster_id": "thunder_slime", "count": 3, "interval": 0.8, "delay": 5.6 }
+      ]
+    },
+    {
+      "wave": 5,
+      "hp_bonus": 0.22,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 5, "interval": 0.8, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 5, "interval": 0.8, "delay": 4.0 }
+      ]
+    },
+    {
+      "wave": 6,
+      "hp_bonus": 0.26,
+      "groups": [
+        { "monster_id": "water_slime", "count": 5, "interval": 0.8, "delay": 0.0 },
+        { "monster_id": "thunder_slime", "count": 5, "interval": 0.8, "delay": 4.0 }
+      ]
+    },
+    {
+      "wave": 7,
+      "hp_bonus": 0.30,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 4, "interval": 0.7, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 4, "interval": 0.7, "delay": 3.0 },
+        { "monster_id": "thunder_slime", "count": 4, "interval": 0.7, "delay": 6.0 },
+        { "monster_id": "ice_slime", "count": 4, "interval": 0.7, "delay": 9.0 }
+      ]
+    }
+  ]
+}

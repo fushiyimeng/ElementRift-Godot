@@ -1,0 +1,171 @@
+{
+  "id": "level_05",
+  "name": "雷霆之巅",
+  "chapter": 5,
+  "description": "崖顶的长廊一路折返向上，史莱姆硬到二十倍——通关即是当前版本的终点。",
+  "background_image": "",
+  "grid": { "width": 128, "height": 72, "tile_size": 15 },
+  "path": [
+    { "x": 0, "y": 50 },
+    { "x": 14, "y": 50 },
+    { "x": 14, "y": 8 },
+    { "x": 30, "y": 8 },
+    { "x": 30, "y": 50 },
+    { "x": 46, "y": 50 },
+    { "x": 46, "y": 8 },
+    { "x": 62, "y": 8 },
+    { "x": 62, "y": 50 },
+    { "x": 78, "y": 50 },
+    { "x": 78, "y": 8 },
+    { "x": 94, "y": 8 },
+    { "x": 94, "y": 50 },
+    { "x": 110, "y": 50 },
+    { "x": 110, "y": 8 },
+    { "x": 124, "y": 8 }
+  ],
+  "obstacles": [
+    { "x": 22, "y": 3 },
+    { "x": 38, "y": 3 },
+    { "x": 54, "y": 3 },
+    { "x": 70, "y": 3 },
+    { "x": 86, "y": 3 },
+    { "x": 102, "y": 3 },
+    { "x": 22, "y": 20 },
+    { "x": 22, "y": 38 },
+    { "x": 38, "y": 20 },
+    { "x": 38, "y": 38 },
+    { "x": 54, "y": 20 },
+    { "x": 54, "y": 38 },
+    { "x": 70, "y": 20 },
+    { "x": 70, "y": 38 },
+    { "x": 86, "y": 20 },
+    { "x": 86, "y": 38 },
+    { "x": 102, "y": 20 },
+    { "x": 102, "y": 38 },
+    { "x": 118, "y": 30 },
+    { "x": 22, "y": 56 },
+    { "x": 38, "y": 56 },
+    { "x": 54, "y": 56 },
+    { "x": 70, "y": 56 },
+    { "x": 86, "y": 56 },
+    { "x": 102, "y": 56 }
+  ],
+  "buildable_tiles": [],
+  "monster_pool": ["fire_slime", "water_slime", "thunder_slime", "ice_slime"],
+  "tower_pool": ["fire_mage_tower", "water_mage_tower", "thunder_mage_tower", "ice_mage_tower"],
+  "card_pool": ["brass_fire_damage", "brass_water_damage", "brass_thunder_damage", "brass_attack_speed"],
+  "initial_points": 100,
+  "bonus_initial_points": 1000,
+  "points_per_wave": 100,
+  "gold_reward": 0,
+  "clear_gold": 100,
+  "monster_hp_multiplier": 20.0,
+  "cards_per_wave": 3,
+  "waves": [
+    {
+      "wave": 1,
+      "hp_bonus": 0.0,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 4, "interval": 1.0, "delay": 0.0 }
+      ]
+    },
+    {
+      "wave": 2,
+      "hp_bonus": 0.03,
+      "groups": [
+        { "monster_id": "water_slime", "count": 4, "interval": 1.0, "delay": 0.0 },
+        { "monster_id": "thunder_slime", "count": 2, "interval": 1.0, "delay": 3.5 }
+      ]
+    },
+    {
+      "wave": 3,
+      "hp_bonus": 0.04,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 4, "interval": 1.0, "delay": 0.0 },
+        { "monster_id": "thunder_slime", "count": 4, "interval": 1.0, "delay": 3.5 }
+      ]
+    },
+    {
+      "wave": 4,
+      "hp_bonus": 0.04,
+      "groups": [
+        { "monster_id": "water_slime", "count": 5, "interval": 0.9, "delay": 0.0 },
+        { "monster_id": "ice_slime", "count": 4, "interval": 0.9, "delay": 3.5 }
+      ]
+    },
+    {
+      "wave": 5,
+      "hp_bonus": 0.04,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 5, "interval": 0.9, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 3, "interval": 0.9, "delay": 3.5 },
+        { "monster_id": "thunder_slime", "count": 2, "interval": 0.9, "delay": 7.0 }
+      ]
+    },
+    {
+      "wave": 6,
+      "hp_bonus": 0.05,
+      "groups": [
+        { "monster_id": "water_slime", "count": 4, "interval": 0.9, "delay": 0.0 },
+        { "monster_id": "thunder_slime", "count": 4, "interval": 0.9, "delay": 3.5 },
+        { "monster_id": "ice_slime", "count": 4, "interval": 0.9, "delay": 7.0 }
+      ]
+    },
+    {
+      "wave": 7,
+      "hp_bonus": 0.05,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 5, "interval": 0.8, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 4, "interval": 0.8, "delay": 3.5 },
+        { "monster_id": "thunder_slime", "count": 4, "interval": 0.8, "delay": 7.0 }
+      ]
+    },
+    {
+      "wave": 8,
+      "hp_bonus": 0.05,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 4, "interval": 0.8, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 5, "interval": 0.8, "delay": 3.5 },
+        { "monster_id": "ice_slime", "count": 4, "interval": 0.8, "delay": 7.0 }
+      ]
+    },
+    {
+      "wave": 9,
+      "hp_bonus": 0.06,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 4, "interval": 0.8, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 5, "interval": 0.8, "delay": 3.5 },
+        { "monster_id": "thunder_slime", "count": 5, "interval": 0.8, "delay": 7.0 }
+      ]
+    },
+    {
+      "wave": 10,
+      "hp_bonus": 0.06,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 4, "interval": 0.8, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 5, "interval": 0.8, "delay": 3.5 },
+        { "monster_id": "thunder_slime", "count": 5, "interval": 0.8, "delay": 7.0 }
+      ]
+    },
+    {
+      "wave": 11,
+      "hp_bonus": 0.06,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 4, "interval": 0.7, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 4, "interval": 0.7, "delay": 3.0 },
+        { "monster_id": "thunder_slime", "count": 4, "interval": 0.7, "delay": 6.0 },
+        { "monster_id": "ice_slime", "count": 3, "interval": 0.7, "delay": 9.0 }
+      ]
+    },
+    {
+      "wave": 12,
+      "hp_bonus": 0.07,
+      "groups": [
+        { "monster_id": "fire_slime", "count": 4, "interval": 0.7, "delay": 0.0 },
+        { "monster_id": "water_slime", "count": 4, "interval": 0.7, "delay": 3.0 },
+        { "monster_id": "thunder_slime", "count": 4, "interval": 0.7, "delay": 6.0 },
+        { "monster_id": "ice_slime", "count": 3, "interval": 0.7, "delay": 9.0 }
+      ]
+    }
+  ]
+}

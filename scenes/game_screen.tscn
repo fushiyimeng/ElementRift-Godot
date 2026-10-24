@@ -1,0 +1,63 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://src/ui/game_screen.gd" id="1_screen"]
+[ext_resource type="Script" path="res://src/ui/board.gd" id="2_board"]
+[ext_resource type="Script" path="res://src/core/game.gd" id="3_game"]
+[ext_resource type="Script" path="res://src/entities/fx_layer.gd" id="4_fx"]
+[ext_resource type="Script" path="res://src/ui/hud.gd" id="5_hud"]
+[ext_resource type="Script" path="res://src/ui/tower_bar.gd" id="6_bar"]
+[ext_resource type="Script" path="res://src/ui/card_panel.gd" id="7_cards"]
+[ext_resource type="Script" path="res://src/ui/collection_panel.gd" id="8_collection"]
+[ext_resource type="Script" path="res://src/ui/recycle_dialog.gd" id="9_recycle"]
+
+[node name="GameScreen" type="Node2D"]
+script = ExtResource("1_screen")
+
+[node name="Board" type="Node2D" parent="."]
+script = ExtResource("2_board")
+
+[node name="Game" type="Node2D" parent="."]
+script = ExtResource("3_game")
+
+[node name="FxLayer" type="Node2D" parent="."]
+script = ExtResource("4_fx")
+
+; UI 挂在 CanvasLayer 上而不是直接挂在 Node2D 下：
+; 直接挂在 Node2D 下的 Control 拿不到视口尺寸（锚点会以 0 尺寸的父矩形计算），
+; 底部塔栏会被算到屏幕外。CanvasLayer 则会给其中的 Control 视口矩形。
+;
+; 代价：CanvasLayer 不是 CanvasItem，父节点 visible = false 传不到它身上，
+; 所以隐藏游戏画面时必须连同这一层的 visible 一起设（见 GameScreen.set_content_visible）。
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Hud" type="Control" parent="UI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("5_hud")
+
+[node name="TowerBar" type="Control" parent="UI"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+mouse_filter = 2
+script = ExtResource("6_bar")
+
+[node name="CardPanel" type="Control" parent="UI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("7_cards")
+
+[node name="CollectionPanel" type="Control" parent="UI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("8_collection")
+
+[node name="RecycleDialog" type="Control" parent="UI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("9_recycle")

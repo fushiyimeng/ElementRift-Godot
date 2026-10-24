@@ -1,0 +1,62 @@
+{
+  "fire_slime": {
+    "name": "火史莱姆",
+    "element": "火",
+    "hp": 100,
+    "speed": 80,
+    "defense_element": 50,
+    "defense_physical": 100,
+    "immune": ["火"],
+    "image": "image/monsters/fire_slime.png",
+    "frame_count": 13,
+    "frame_width": 128,
+    "frame_height": 64,
+    "sprite_width": 128,
+    "sprite_height": 64
+  },
+  "water_slime": {
+    "name": "水史莱姆",
+    "element": "水",
+    "hp": 100,
+    "speed": 80,
+    "defense_element": 50,
+    "defense_physical": 100,
+    "immune": ["水"],
+    "image": "image/monsters/water_slime.png",
+    "frame_count": 13,
+    "frame_width": 128,
+    "frame_height": 64,
+    "sprite_width": 128,
+    "sprite_height": 64
+  },
+  "thunder_slime": {
+    "name": "雷史莱姆",
+    "element": "雷",
+    "hp": 100,
+    "speed": 80,
+    "defense_element": 50,
+    "defense_physical": 100,
+    "immune": ["雷"],
+    "image": "image/monsters/thunder_slime.png",
+    "frame_count": 13,
+    "frame_width": 128,
+    "frame_height": 62,
+    "sprite_width": 128,
+    "sprite_height": 62
+  },
+  "ice_slime": {
+    "name": "冰史莱姆",
+    "element": "冰",
+    "hp": 100,
+    "speed": 80,
+    "defense_element": 50,
+    "defense_physical": 100,
+    "immune": ["冰"],
+    "image": "image/monsters/冰史莱姆.png",
+    "frame_count": 13,
+    "frame_width": 128,
+    "frame_height": 64,
+    "sprite_width": 128,
+    "sprite_height": 64
+  }
+}
