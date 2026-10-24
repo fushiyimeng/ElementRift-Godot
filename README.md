@@ -308,3 +308,16 @@ GDScript 与 Python 的语义差异（都写在代码注释里了，改代码时
 - 关卡平衡：**单一元素塔无法通关**，因为每种史莱姆免疫自己那一系（例如第 6 波是水+雷史莱姆，全用雷塔会被免疫怪走通）。这是原版就有的设计
 - 关卡 2~5 的难度倍率（5/10/15/20 倍）是**按倍率反推**出来的，不是逐波试玩调出来的：`test_levels` 只锁住了「末波总血量逐关递增且不超过上一关 5 倍」「开局打得动第 1 波」这类约束。真要手感合适，还是得实机打一遍再微调 `monster_hp_multiplier` / `points_per_wave` / `bonus_initial_points`
 - 关卡 5 是当前版本的终点（没有第 6 关，也没有专门的 BOSS 怪）
+
+---
+
+## 下载
+
+不想装 Godot 的话，去 [Releases](https://github.com/fushiyimeng/ElementRift-Godot/releases) 拿：
+
+| 包 | 说明 |
+|---|---|
+| `ElementRift-v1.0.0-win-x64.zip` | **直接能玩**。解压后双击 `元素裂隙.exe` |
+| `ElementRift-v1.0.0-source.zip` | 源码。要用 Godot 4.7 打开 `project.godot` |
+
+> 只打包了 Windows 64 位导出；macOS / Linux 需要自己用 Godot 导出。
